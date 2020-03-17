@@ -69,12 +69,30 @@ body { margin: 0 }
   background:#17c2a4;
   border:none;
 }
-.we_provide_title{
+.title{
   text-align: center;
-  color: #fff;
   text-decoration: none; 
   font-family: 'Roboto', serif;
   font-size: 40px;
+  color: #3c4761;
+  position: relative;
+}
+.title.white{
+  color: #ffffff;
+}
+.title::after{
+  content: "";
+  height: 6px;
+  width: 90px;
+  background-color: rgba(0, 0, 0, .15);
+  margin-top: 10px ;
+  margin-bottom: 10px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -20px;
 }
 .we_provide_blocks{
   margin-top: 70px;
@@ -124,14 +142,7 @@ body { margin: 0 }
   background:#e7f1f8;
   border:none;
 }
-.team_title{
-  text-align: center;
-  color: #3c4761;
-  text-decoration: none; 
-  font-family: 'Roboto', serif;
-  font-size: 40px;
 
-}
 .team_about{
   margin-top: 40px;
   text-align: center;
@@ -188,13 +199,7 @@ body { margin: 0 }
   background:#ffffff;
   border:none;
 }
-.skills_title{
-  text-align: center;
-  color: #3c4761;
-  text-decoration: none; 
-  font-family: 'Roboto', serif;
-  font-size: 40px;
-}
+
 .skills_about{
   margin-top: 40px;
   text-align: center;
@@ -262,13 +267,6 @@ body { margin: 0 }
   padding-bottom: 30px;
 }
 
-.portfolio_title{
-  text-align: center;
-  color: #393939;
-  text-decoration: none; 
-  font-family: 'Roboto', serif;
-  font-size: 40px;
-}
 .portfolio_batton_item{
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -326,14 +324,6 @@ body { margin: 0 }
   background:#d74680;
   border:none;
 }
-.what_say_title{
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none; 
-  font-family: 'Roboto', serif;
-  font-size: 40px;
-  margin-top: 120px;
-}
 .what_say_title_about{
   margin-top: 40px;
   text-align: center;
@@ -347,8 +337,8 @@ body { margin: 0 }
   height: 100px;
   border-radius: 50%;
   background:#878787;
-  margin: 0 auto;
-  box-sizing: content-box;
+  margin-right: 40px;
+  flex-shrink: 0;
 }
 .what_say_people_text{
   text-align: left;
@@ -357,6 +347,7 @@ body { margin: 0 }
   font-family: 'Roboto', serif;
   font-style: italic;
   font-size: 21px;
+  width: 400px;
 
 }
 .what_say_people_name{
@@ -391,14 +382,6 @@ body { margin: 0 }
   height:820px;
   background:#3c5499;
   border:none;
-}
-.get_in_title{
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none; 
-  font-family: 'Roboto', serif;
-  font-size: 40px;
-  margin-top: 20px;
 }
 .get_in_title_about{
   margin-top: 40px;
@@ -489,3 +472,4 @@ body { margin: 0 }
   text-decoration: none;
   color: #30bae7;
 }
+
